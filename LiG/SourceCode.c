@@ -24,7 +24,7 @@ int main(int argc, char *argv[]){
     if(OgFile == NULL){ // in cases if the file didnt open.
         printf("Didnt work, make sure that the file \"loremIpsum.txt\" is present. \n");
     } else {
-        printf("loading... \n");
+        printf("Generating... \n");
     }
 
     
@@ -32,7 +32,7 @@ int main(int argc, char *argv[]){
     int nullSpaces=0; // to count spaces
     char ch;
 
-    printf("\nHere`s Your %d of LoremIpsum Text:\n\n\n", Number_of_words);
+    printf("\nHere`s Your %d of LoremIpsum Text:\n\n", Number_of_words);
     
     // This do..while loop prints the characters from the loremIpsum.txt file one by one 
     // also Keeps track of the number of words 
@@ -47,7 +47,7 @@ int main(int argc, char *argv[]){
         
         if(nullSpaces == Number_of_words){ // This is where This program actually stops ends
 
-            printf("\n\n\n ______________________________________________________________________");
+            printf("\n\n ______________________________________________________________________");
             outro(Number_of_words);
         }
     } while(ch != EOF);
