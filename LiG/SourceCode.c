@@ -40,8 +40,8 @@ int main(int argc, char *argv[]){
         ch = fgetc(OgFile);
         putchar(ch);
 
-        if(ch == ' ' || ch == "."){
-            nullSpaces++;  //Each words are seperated by either white spaces or fullstops 
+        if(ch == ' '){
+            nullSpaces++;  //Each words are seperated by white spaces
                             // therefore it can be used to keep track of number of words
         }
         
